@@ -49,11 +49,32 @@ class Human:
             print(f"{self.name} не має достатньо грошей для відпочинку.")
 
     def cleaning(self):
-        if self.house.pollution > 0:
-            self.house.pollution -= random.randint(5, 15)
-            print(f"{self.name} прибирає будинок.")
+        print("Виберіть тип прибирання:")
+        print("1 - Легке прибирання")
+        print("2 - Генеральне прибирання")
+
+        try:
+            choice = int(input("Ваш вибір: "))
+        except ValueError:
+            print("Невірний вибір! Прибирання скасовано.")
+            return
+
+        if choice == 1:
+            if self.house.pollution > 0:
+                reduction = random.randint(5, 10)
+                self.house.pollution -= reduction
+                print(f"{self.name} провів легке прибирання, знизив забруднення на {reduction}.")
+            else:
+                print("Будинок вже чистий, легке прибирання не потрібне.")
+        elif choice == 2:
+            if self.house.pollution > 0:
+                reduction = random.randint(15, 25)
+                self.house.pollution -= reduction
+                print(f"{self.name} провів генеральне прибирання, знизив забруднення на {reduction}.")
+            else:
+                print("Будинок вже чистий, генеральне прибирання не потрібне.")
         else:
-            print("Будинок чистий, прибирання не потрібне.")
+            print("Невірний вибір! Прибирання скасовано.")
 
     def info(self):
         print(f"Гроші - ${self.money}")
