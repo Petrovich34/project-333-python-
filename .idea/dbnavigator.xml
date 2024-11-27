@@ -24,15 +24,13 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="94467756-556b-46b1-b14c-37faae22b39a" object-ref="schemas/examen/tables/exam" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="94467756-556b-46b1-b14c-37faae22b39a" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="94467756-556b-46b1-b14c-37faae22b39a" dataset="examen.exam" active-filter-id="354a5820-8363-4605-b8a7-429f22d04641">
+    <filter-actions connection-id="94467756-556b-46b1-b14c-37faae22b39a" dataset="examen.exam" active-filter-id="EMPTY_FILTER">
       <filter id="354a5820-8363-4605-b8a7-429f22d04641" name="examen" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="login" operator="=" value="examen" active="true" />
       </filter>

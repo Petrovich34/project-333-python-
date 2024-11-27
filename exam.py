@@ -6,7 +6,6 @@ cur = connection.cursor()
 cur.execute("CREATE TABLE IF NOT EXISTS exam (login TEXT, password TEXT);")
 connection.commit()
 
-print("Ласкаво просимо до системи!")
 choice = int(input('Оберіть дію:\n1 - Зареєструватися\n2 - Увійти\nВаш вибір: '))
 
 if choice == 1:
